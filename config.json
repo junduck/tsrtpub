@@ -1,0 +1,14 @@
+{
+    "token": "你的tushare token",
+    "url": "wss://ws.waditu.com/listening",
+    "sub": {
+        "HQ_STK_TICK": [
+            "000001.SZ",
+            "600000.SH",
+            "159995.SZ"
+        ]
+    },
+    "pub": {
+        "bind": "tcp://*:5555"
+    }
+}

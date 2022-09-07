@@ -1,0 +1,18 @@
+Tushare Pro 行情订阅分发
+
+1. 综述：
+    本工具订阅Tushare实时行情并通过Zeromq PUB进行分发。
+
+2. 配置：
+    tsrtpub读取当前目录下config.json文件进行配置，请参考事例config.json
+
+3. 编译：
+    3.1 tsrtpub依赖cppzmq，与nlohmann::json，请在你的包管理中自行安装。
+    3.2 git clone --recurse-submodules https://github.com/junduck/tsrtpub
+    3.3 mkdir build
+        cd build
+        cmake ..
+        make
+
+4. 运行：
+    4.1 ./tsrtpub 跑就完事了，不需要参数。
