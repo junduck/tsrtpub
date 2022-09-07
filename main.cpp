@@ -40,7 +40,6 @@ int main(int, char **) {
         zmq::message_t rec(record.data(), record.size());
         sock.send(env, zmq::send_flags::sndmore);
         sock.send(rec, zmq::send_flags::none);
-        std::cout << "DATA: " << code << " " << record << std::endl;
       } else {
         std::cerr << "Error: " << j["message"].dump() << std::endl;
       }
